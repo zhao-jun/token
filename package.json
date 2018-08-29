@@ -1,0 +1,43 @@
+{
+  "name": "token",
+  "version": "0.0.1",
+  "description": "token提取工具",
+  "main": "index.js",
+  "bin": {
+    "token": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src",
+    "commit": "npm install -g commitizen && commitizen init cz-conventional-changelog --save-dev --save-exact",
+    "pkg": "rimraf pkg-dist && pkg . --targets=node8-win-x64,node8-macos-x64,node8-linux-x64 --out-path pkg-dist"
+  },
+  "pkg": {
+    "scripts": [
+      "src/**/*.js"
+    ],
+    "assets": "node_modules/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhao-jun/token.git"
+  },
+  "author": "zhao-jun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhao-jun/token/issues"
+  },
+  "homepage": "https://github.com/zhao-jun/token#readme",
+  "dependencies": {
+    "anyproxy": "^4.0.12"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
+    "pkg": "^4.3.4",
+    "rimraf": "^2.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
