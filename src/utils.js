@@ -1,6 +1,6 @@
-const fs = require('fs')
+const fs = require('fs');
 
-module.exports = utils = {
+module.exports = {
   fsExistsSync(path) {
     try {
       fs.accessSync(path);
@@ -9,4 +9,4 @@ module.exports = utils = {
     }
     return true;
   }
-}
+};

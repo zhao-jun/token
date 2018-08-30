@@ -1,1 +1,3 @@
-require('./ca')()
+#!/usr/bin/env node
+
+require('./ca')();

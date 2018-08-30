@@ -9,13 +9,17 @@
   "scripts": {
     "start": "node src",
     "commit": "npm install -g commitizen && commitizen init cz-conventional-changelog --save-dev --save-exact",
+    "precommit": "pretty-quick --staged",
     "pkg": "rimraf pkg-dist && pkg . --targets=node8-win-x64,node8-macos-x64,node8-linux-x64 --out-path pkg-dist"
   },
   "pkg": {
     "scripts": [
       "src/**/*.js"
     ],
-    "assets": "node_modules/**"
+    "assets": [
+      "node_modules/anyproxy/**",
+      "node_modules/chalk/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -33,7 +37,10 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
     "pkg": "^4.3.4",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0",
     "rimraf": "^2.6.2"
   },
   "config": {
