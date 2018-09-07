@@ -17,8 +17,11 @@
       "src/**/*.js"
     ],
     "assets": [
+      "src/assets/vbs/**",
       "node_modules/anyproxy/**",
-      "node_modules/chalk/**"
+      "node_modules/chalk/**",
+      "node_modules/regedit/**/**",
+      "node_modules/keypress/**/**"
     ]
   },
   "repository": {
@@ -33,7 +36,9 @@
   "homepage": "https://github.com/zhao-jun/token#readme",
   "dependencies": {
     "anyproxy": "^4.0.12",
-    "chalk": "^2.4.1"
+    "chalk": "^2.4.1",
+    "keypress": "^0.2.1",
+    "regedit": "^3.0.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
