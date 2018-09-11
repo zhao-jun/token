@@ -67,9 +67,9 @@ module.exports = (proxyEnable, cb) => {
   };
   // https://github.com/ironSource/node-regedit/issues/56
   // pkg依然存在vbs问题，todo
-  regedit.setExternalVBSLocation(
-    path.join(require.main.filename, '../assets/vbs')
-  );
+  // regedit.setExternalVBSLocation(
+  //   path.join(path.dirname(process.execPath), './node_modules/regedit')
+  // );
   regedit.putValue(valueToPut, err => {
     if (err) {
       console.log(chalk.red(`error: ${err}`));

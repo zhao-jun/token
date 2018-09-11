@@ -1,10 +1,10 @@
 {
-  "name": "token",
+  "name": "get-token",
   "version": "0.0.1",
   "description": "token提取工具",
   "main": "index.js",
   "bin": {
-    "token": "./src/index.js"
+    "get-token": "./src/index.js"
   },
   "scripts": {
     "start": "node src",
@@ -17,7 +17,6 @@
       "src/**/*.js"
     ],
     "assets": [
-      "src/assets/vbs/**",
       "node_modules/anyproxy/**",
       "node_modules/chalk/**",
       "node_modules/regedit/**/**",

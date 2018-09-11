@@ -8,8 +8,9 @@ const record = (name, content) => {
   if (fsExistsSync(name)) return;
   fs.writeFile(name, content, (err, data) => {
     if (err) return console.error(err);
-    console.log(chalk.blue(`获取 token 成功！请查看 ${name}`));
-    // process.exit(0);
+    console.log(
+      chalk.blue(`获取 token 成功！请查看 ${path.join(process.cwd(), name)}`)
+    );
   });
 };
 

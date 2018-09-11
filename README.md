@@ -1,2 +1,11 @@
-# token
-token提取工具
+# get-token
+
+## Installation
+```
+npm i -g get-token
+```
+
+## Usage
+```
+get-token
+```
